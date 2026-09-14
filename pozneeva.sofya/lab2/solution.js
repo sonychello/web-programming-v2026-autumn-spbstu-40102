@@ -1,4 +1,4 @@
-export function isStringIsogram(str) {
+export function isIsogram(str) {
   str = str.toLowerCase();
   const set = new Set();
   for (const lit of str) {
