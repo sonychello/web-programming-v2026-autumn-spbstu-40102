@@ -16,6 +16,6 @@ export function findEquilibriumIndex(arr) {
     leftSum += arr[i];
   }
   if (sum === 0) {
-    return - 1;
+    return -1;
   }
 }
