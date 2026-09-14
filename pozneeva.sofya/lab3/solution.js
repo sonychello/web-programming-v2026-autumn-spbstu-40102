@@ -6,7 +6,7 @@ export function findEquilibriumIndex(arr) {
   }
   let leftSum = 0;
 
-  for (let i = 0; i < arr.length - 1; i++) {
+  for (let i = 0; i < arr.length; i++) {
     sum -= arr[i];
 
     if (leftSum === sum) {
@@ -15,7 +15,7 @@ export function findEquilibriumIndex(arr) {
 
     leftSum += arr[i];
   }
-  if (sum === arr[arr.length - 1]) {
-    return arr.length - 1;
+  if (sum === 0) {
+    return - 1;
   }
 }
